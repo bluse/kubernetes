@@ -44,7 +44,10 @@ spec:
   - host: springboot.mooc.com
     http:
       paths:
-      - path: /
+      - pathType: Prefix
+        path: /
         backend:
-          serviceName: springboot-web-demo
-          servicePort: 80
+          service:
+            name: springboot-web-demo
+            port:
+              number: 80
