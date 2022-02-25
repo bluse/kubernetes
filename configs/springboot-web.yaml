@@ -44,8 +44,8 @@ spec:
   - host: springboot.mooc.com
     http:
       paths:
-      - pathType: Prefix
-        path: /
+      - path: /
+        pathType: Prefix
         backend:
           service:
             name: springboot-web-demo
