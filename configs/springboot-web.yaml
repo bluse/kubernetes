@@ -42,6 +42,11 @@ metadata:
   annotations:
       nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+  defaultBackend:
+    service:
+      name: springboot-web-demo
+      port:
+        number: 80
   rules:
   - host: springboot.mooc.com
     http:
