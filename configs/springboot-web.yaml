@@ -40,7 +40,7 @@ kind: Ingress
 metadata:
   name: springboot-web-demo
   annotations:
-    ingressclass.kubernetes.io/is-default-class: "true"
+    ingressclass.kubernetes.io/is-default-class: true
 spec:
   rules:
   - host: springboot.mooc.com
