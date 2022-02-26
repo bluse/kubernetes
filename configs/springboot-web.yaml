@@ -40,9 +40,8 @@ kind: Ingress
 metadata:
   name: springboot-web-demo
   annotations:
-      nginx.ingress.kubernetes.io/rewrite-target: /
+    ingressclass.kubernetes.io/is-default-class: "true"
 spec:
-  ingressClassName: nginx
   rules:
   - host: springboot.mooc.com
     http:
