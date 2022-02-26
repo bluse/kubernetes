@@ -1,8 +1,0 @@
-# General
-.DS_Store
-*.iml
-*.class
-target/
-.idea
-.git
-
