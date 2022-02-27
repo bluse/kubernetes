@@ -4,12 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://code.alibabatech.com/schema/dubbo
-        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd"
+       default-autowire="byName" default-lazy-init="false">
 
-    <dubbo:application name="demo"/>
-
-    <dubbo:registry address="zookeeper://172.27.34.233:2181"/>
-
-    <dubbo:consumer retries="3" timeout="60000"/>
+    <dubbo:reference id="demoService" interface="com.mooc.demo.api.DemoService" />
 
 </beans>

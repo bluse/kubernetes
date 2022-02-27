@@ -8,7 +8,7 @@
 
     <dubbo:application name="demo"/>
 
-    <dubbo:registry address="zookeeper://172.27.34.233:2181"/>
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
 
     <dubbo:consumer retries="3" timeout="60000"/>
 
