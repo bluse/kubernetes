@@ -28,7 +28,7 @@ metadata:
     run: springboot-web-demo
 spec:
   ports:
-  - port: 8080
+  - port: 80
     protocol: TCP
     targetPort: 8080
   selector:
@@ -53,6 +53,6 @@ spec:
           service:
             name: springboot-web-demo
             port:
-              number: 8080
+              number: 80
 
 
