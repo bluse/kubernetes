@@ -28,4 +28,4 @@ spec:
       - name: dubb-demo
         image: hub.mooc.com/kubernetes/dubbo:v1
         ports:
-        - containerPort: 20880
+        - containerPort: 20881
