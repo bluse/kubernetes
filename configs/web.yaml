@@ -40,6 +40,7 @@ kind: Ingress
 metadata:
   name: web-demo
 spec:
+  ingressClassName: "nginx"
   rules:
   - host: web.mooc.com
     http:
