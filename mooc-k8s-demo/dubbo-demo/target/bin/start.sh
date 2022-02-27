@@ -15,6 +15,11 @@ if [ -z "${SERVER_NAME}" ]; then
 	exit 1
 fi
 
+if [ ! -z "${DUBBO_PORT}" ];then
+    sed -i "s/dubbo.protocol.port=${SERVER_PORT}/dubbo.protocol.port=${DUBBO_PORT}/g" conf/dubbo.properties
+    SERVER_PORT=${DUBBO_PORT}
+fi
+
 LOGS_DIR=""
 if [ -n "${LOGS_FILE}" ]; then
 	LOGS_DIR=`dirname ${LOGS_FILE}`
